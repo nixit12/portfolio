@@ -1,0 +1,549 @@
+/*Import files strat*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Import files end*/
+
+
+/*variables declaration start*/
+
+:root {
+    --primary-color: #ff451b;
+    --dark-color: #000000;
+    --secondary-color: #313131;
+    --grey-color: #F4F4F4;
+    --white-color: #ffffff;
+    --body-fonts: 'Poppins', sans-serif;
+    --title-fonts: 'Jost', sans-serif;
+}
+
+
+/*variables declaration end*/
+
+
+/*Moz Selection Start*/
+
+::-moz-selection {
+    text-shadow: none;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+::selection {
+    text-shadow: none;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+
+/*Moz Selection End*/
+
+
+/*General Start*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white-color);
+    font-family: var(--body-fonts);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.8;
+    color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-fonts);
+    color: var(--dark-color);
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+section {
+    padding: 130px 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.bg-light {
+    background-color: #f5f5f5;
+}
+
+
+/*General End*/
+
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*title css*/
+
+.title {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 9;
+}
+
+.title .big-text {
+    font-size: 72px;
+    line-height: 80px;
+    font-family: var(--title-fonts);
+}
+
+.title .sm-text {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 5px;
+    font-family: var(--title-fonts);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.title .tag {
+    font-family: var(--body-fonts);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    font-size: 114px;
+    line-height: 124px;
+    font-weight: 900;
+    transform: translateY(-50%);
+    color: #aaaaaa;
+    z-index: -1;
+}
+
+.nx-image {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 32px;
+    width: calc(100% - 105px);
+    font-family: var(--title-fonts);
+}
+
+
+/*btn*/
+
+.nx-btn {
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid var(--primary-color);
+    padding: 6px 10px;
+    font-family: var(--title-fonts);
+}
+
+.nx-btn.fit-content {
+    width: fit-content;
+}
+
+.nx-btn:hover {
+    color: #000000;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.area-1 {
+    flex: 1;
+}
+
+.area-2 {
+    flex: 2;
+}
+
+.area-3 {
+    flex: 3;
+}
+
+.area-4 {
+    flex: 4;
+}
+
+.area-5 {
+    flex: 5;
+}
+
+.area-6 {
+    flex: 6;
+}
+
+.area-7 {
+    flex: 7;
+}
+
+.area-8 {
+    flex: 8;
+}
+
+.area-9 {
+    flex: 9;
+}
+
+.area-10 {
+    flex: 10;
+}
+
+.area-11 {
+    flex: 11;
+}
+
+.area-12 {
+    flex: 12;
+}
+
+.flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+/*about me css*/
+
+.about-me {
+    position: relative;
+}
+
+.about-me .bg-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.details-tag {
+    display: inline-block;
+    width: calc(100%/2 - 15px);
+}
+
+.details-tag .head {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 46px;
+}
+
+
+/*tab js*/
+
+.tabs-nav {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.tabs-nav li a {
+    color: var(--dark-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--dark-color);
+    width: calc(100%/5);
+    display: inline-block;
+    text-align: center;
+}
+
+.tabs-nav li.active a {
+    color: #ffffff;
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+}
+
+.tabs-nav li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.tabs-content {
+    background: #FFF;
+    overflow: hidden;
+}
+
+.tabs-content>div:not(:first-child) {
+    display: none;
+}
+
+.tabs-content-head {
+    font-size: 52px;
+    line-height: 70px;
+    color: #c0c0c0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: #c0c0c0;
+    text-transform: uppercase;
+}
+
+
+/*Progressbas css*/
+
+.nx-progress-bar {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nx-progress-bar .nx-progressbar-item {
+    position: relative;
+}
+
+.nx-progress-bar .nx-progressbar-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.nx-progress-bar .nx-progressbar-item .nx-value {
+    position: absolute;
+    top: 0;
+    font-weight: 500;
+}
+
+.nx-progress-bar .nx-progressbar-item .nx-progressbar-name {
+    text-transform: capitalize;
+    color: var(--dark-color);
+    font-family: var(--title-fonts);
+    font-weight: 600;
+}
+
+.nx-progress-bar .nx-progressbar-item .nx-progressbar-value {
+    position: relative;
+    background-color: var(--primary-color);
+    width: 0;
+    height: 5px;
+    margin-top: 10px;
+    display: block !important;
+}
+
+
+/*edu list css*/
+
+.edu_list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.edu_list li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.edu_list .item {
+    width: 100%;
+    float: left;
+    clear: both;
+    background-color: #f2f2f2;
+    position: relative;
+    padding: 52px 50px 53px;
+}
+
+.edu_list .item_top {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.edu_list .item_top h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.edu_list .item_top span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.edu_list h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+.edu_list .item:after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    left: 50%;
+    right: 50px;
+    right: 50%;
+    height: 4px;
+    background-color: #000;
+    bottom: 0;
+    transition: all .5s 1s ease;
+}
+
+
+/*input css*/
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid #a7a5a5;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+/*Header css*/
+
+.main-header {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+    z-index: 9999;
+}
+
+.main-header .header-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1340px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.main-header .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-header .nav-list .link a {
+    font-size: 20px;
+    line-height: 60px;
+    color: var(--dark-color);
+}
+
+
+/*footer css*/
+
+.footer-main {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 25px 0 0;
+}
+
+.footer-main ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-main ul a {
+    color: #fff;
+}
+
+.sub-footer {
+    background-color: #7c7c7c;
+    color: var(--white-color);
+}
+
+
+/* Portfoliobox */
+
+.nx-portfoliobox {
+    position: relative;
+}
+
+.nx-portfoliobox img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.nx-portfoliobox .nx-portfoliobox-content {
+    position: absolute;
+    inset: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transform: rotateX(90deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.nx-portfoliobox:hover .nx-portfoliobox-content {
+    transform: rotateX(0);
+}
+
+.nx-portfoliobox .nx-portfoliobox-content:before {
+    content: "";
+    background: var(--primary-color);
+    opacity: 0.7;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.nx-portfoliobox .nx-portfoliobox-content .nx-category {
+    color: var(--white-color);
+    text-transform: uppercase;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 0;
+    right: 0;
+}
+
+.nx-portfoliobox .nx-portfoliobox-content .nx-title {
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--white-color);
+    position: absolute;
+    top: calc(50% - 0px);
+    left: 0;
+    right: 0;
+}
